@@ -11,13 +11,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
-      <Head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1728156574997000"
-          crossOrigin="anonymous"
-        ></script>
-      </Head>
+      <meta name="google-adsense-account" content="ca-pub-1728156574997000" />
       {!showVideo ? (
         <button
           onClick={handleClick}
