@@ -1,8 +1,7 @@
+"use client";
 
-"use client"
-
-import { useState } from 'react';
-
+import { useState } from "react";
+import Head from "next/head";
 export default function Home() {
   const [showVideo, setShowVideo] = useState<boolean>(false);
 
@@ -12,6 +11,13 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
+      <Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1728156574997000"
+          crossOrigin="anonymous"
+        ></script>
+      </Head>
       {!showVideo ? (
         <button
           onClick={handleClick}
@@ -20,7 +26,9 @@ export default function Home() {
           Don't click here!
         </button>
       ) : (
-        <div className="relative w-full max-w-3xl mt-8"> {/* Adiciona margem superior */}
+        <div className="relative w-full max-w-3xl mt-8">
+          {" "}
+          {/* Adiciona margem superior */}
           <button
             onClick={() => setShowVideo(false)}
             className="absolute top-4 right-4 bg-gray-800 text-white p-2 rounded-full"
