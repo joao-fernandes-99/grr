@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Head from "next/head";
 export default function Home() {
   const [showVideo, setShowVideo] = useState<boolean>(false);
 
