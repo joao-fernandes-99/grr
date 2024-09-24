@@ -10,7 +10,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
-      <meta name="google-adsense-account" content="ca-pub-1728156574997000" />
       {!showVideo ? (
         <button
           onClick={handleClick}
